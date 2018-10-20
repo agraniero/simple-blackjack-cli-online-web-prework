@@ -36,6 +36,11 @@ def hit?(card_total)
   if user_input == "h"
     card_total + deal_card 
   elsif user_input == "s"
+    if card_total >= 17
+      puts "WINNER"
+    else
+      puts "sorry you lost"
+    end
     card_total
   else
     invalid_command
